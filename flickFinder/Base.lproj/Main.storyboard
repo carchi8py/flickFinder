@@ -93,16 +93,27 @@
                                     <rect key="frame" x="217" y="647" width="77" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some random text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nd-ZD-qAE">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.57866467927631571" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.0" blue="0.75192742598684215" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="21" y="717" width="362" height="75"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1450980392" green="0.28235294119999998" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Fo6-cI-ece" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="2gx-4N-Ngq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8nd-ZD-qAE" secondAttribute="trailing" constant="1" id="6WI-UD-wWw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="9hR-rk-ZY3"/>
                             <constraint firstItem="rv3-Cf-6wg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="Abn-pP-tcO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3sw-gR-d6B" secondAttribute="trailing" constant="123" id="Bpo-hN-T8m"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mxd-5e-Ze3" secondAttribute="trailing" constant="90" id="Btd-3g-qPq"/>
                             <constraint firstItem="muc-AC-NEX" firstAttribute="top" secondItem="Fo6-cI-ece" secondAttribute="bottom" constant="42" id="DQN-cv-BnZ"/>
                             <constraint firstItem="mxd-5e-Ze3" firstAttribute="leading" secondItem="B0m-Pt-Q6a" secondAttribute="trailing" constant="99" id="EuL-9D-59W"/>
+                            <constraint firstItem="8nd-ZD-qAE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="GRx-U5-4uf"/>
                             <constraint firstItem="7qz-5K-b7g" firstAttribute="leading" secondItem="rv3-Cf-6wg" secondAttribute="trailing" constant="39" id="In2-SH-LuY"/>
                             <constraint firstItem="rv3-Cf-6wg" firstAttribute="top" secondItem="muc-AC-NEX" secondAttribute="bottom" constant="28" id="IqT-4L-842"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7qz-5K-b7g" secondAttribute="trailing" constant="64" id="JyD-4a-4Ga"/>
@@ -113,6 +124,7 @@
                             <constraint firstItem="mxd-5e-Ze3" firstAttribute="leading" secondItem="B0m-Pt-Q6a" secondAttribute="trailing" constant="99" id="b6j-qZ-WQr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="muc-AC-NEX" secondAttribute="trailing" constant="64" id="biq-WJ-tL2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="flk-hu-iXU"/>
+                            <constraint firstItem="8nd-ZD-qAE" firstAttribute="top" secondItem="mxd-5e-Ze3" secondAttribute="bottom" constant="49" id="if1-ln-IZt"/>
                             <constraint firstItem="7qz-5K-b7g" firstAttribute="top" secondItem="muc-AC-NEX" secondAttribute="bottom" constant="28" id="jcI-En-GbV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="kcY-AO-jKe"/>
                             <constraint firstItem="n3r-TR-3jB" firstAttribute="leading" secondItem="7qz-5K-b7g" secondAttribute="trailing" constant="17" id="lqY-eh-p4v"/>
@@ -137,6 +149,7 @@
                                 <exclude reference="n3r-TR-3jB"/>
                                 <exclude reference="B0m-Pt-Q6a"/>
                                 <exclude reference="mxd-5e-Ze3"/>
+                                <exclude reference="8nd-ZD-qAE"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2gx-4N-Ngq"/>
@@ -168,6 +181,9 @@
                                 <exclude reference="u1a-xP-jh3"/>
                                 <exclude reference="lqY-eh-p4v"/>
                                 <exclude reference="s0k-Zc-BWA"/>
+                                <exclude reference="6WI-UD-wWw"/>
+                                <exclude reference="GRx-U5-4uf"/>
+                                <exclude reference="if1-ln-IZt"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -181,6 +197,7 @@
                                 <include reference="n3r-TR-3jB"/>
                                 <include reference="B0m-Pt-Q6a"/>
                                 <include reference="mxd-5e-Ze3"/>
+                                <include reference="8nd-ZD-qAE"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2gx-4N-Ngq"/>
@@ -212,6 +229,9 @@
                                 <include reference="u1a-xP-jh3"/>
                                 <include reference="lqY-eh-p4v"/>
                                 <include reference="s0k-Zc-BWA"/>
+                                <include reference="6WI-UD-wWw"/>
+                                <include reference="GRx-U5-4uf"/>
+                                <include reference="if1-ln-IZt"/>
                             </mask>
                         </variation>
                     </view>
