@@ -70,7 +70,18 @@ class ViewController: UIViewController {
             } else {
                 var parsingError: NSError? = nil
                 let parsedResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: &parsingError) as! NSDictionary
-                println(parsedResult.valueForKey("photos"))
+                
+                if let photosDiectionary = parsedResult.valueForKey("photos") as? NSDictionary {
+                    if let photoArray = photosDiectionary.valueForKey("photo") as? [[String: AnyObject]] {
+                        let randomPhotoIndex = Int(arc4random_uniform(UInt32(photoArray.count)))
+                        let photoDictionary = photoArray[randomPhotoIndex] as [String: AnyObject]
+                        self.photoTitleLabel.text = photoDictionary["url_m"] as? String
+                    } else {
+                        self.photoTitleLabel.text = ("Can't find key photo in \(photosDiectionary)")
+                    }
+                } else {
+                    self.photoTitleLabel.text = ("Cant find key 'photos' in \(parsedResult)")
+                }
             }
         }
         
