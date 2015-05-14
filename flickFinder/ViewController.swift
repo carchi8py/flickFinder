@@ -92,7 +92,10 @@ class ViewController: UIViewController {
                         self.photoTitleLabel.text = ("Can't find key photo in \(photosDiectionary)")
                     }
                 } else {
-                    self.photoTitleLabel.text = ("Cant find key 'photos' in \(parsedResult)")
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.photoTitleLabel.text = "No Photos found"
+                        self.photoImageView.image = nil
+                    })
                 }
             }
         }
