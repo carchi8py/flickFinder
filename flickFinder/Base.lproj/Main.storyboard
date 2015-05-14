@@ -31,42 +31,73 @@
                                     <rect key="frame" x="21" y="72" width="362" height="289"/>
                                 </variation>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="muc-AC-NEX">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="21" y="403" width="299" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.1450980392" green="0.28235294119999998" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Fo6-cI-ece" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="1vM-zH-zhz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="9hR-rk-ZY3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3sw-gR-d6B" secondAttribute="trailing" constant="123" id="Bpo-hN-T8m"/>
+                            <constraint firstItem="muc-AC-NEX" firstAttribute="top" secondItem="Fo6-cI-ece" secondAttribute="bottom" constant="42" id="DQN-cv-BnZ"/>
+                            <constraint firstItem="Fo6-cI-ece" firstAttribute="top" secondItem="3sw-gR-d6B" secondAttribute="bottom" constant="23" id="IhC-lh-vVi"/>
                             <constraint firstItem="3sw-gR-d6B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="124" id="V3u-Sk-DbL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="muc-AC-NEX" secondAttribute="trailing" constant="64" id="biq-WJ-tL2"/>
                             <constraint firstItem="Fo6-cI-ece" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="fcs-so-D0h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="flk-hu-iXU"/>
                             <constraint firstItem="Fo6-cI-ece" firstAttribute="top" secondItem="3sw-gR-d6B" secondAttribute="bottom" constant="23" id="m0Z-P2-2YS"/>
+                            <constraint firstItem="muc-AC-NEX" firstAttribute="top" secondItem="Fo6-cI-ece" secondAttribute="bottom" constant="42" id="qjG-f2-Khk"/>
+                            <constraint firstItem="muc-AC-NEX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="rob-tt-bjN"/>
                             <constraint firstItem="3sw-gR-d6B" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="vEC-2m-6Mp"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3sw-gR-d6B"/>
                                 <exclude reference="Fo6-cI-ece"/>
+                                <exclude reference="muc-AC-NEX"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="1vM-zH-zhz"/>
                                 <exclude reference="9hR-rk-ZY3"/>
+                                <exclude reference="IhC-lh-vVi"/>
                                 <exclude reference="fcs-so-D0h"/>
+                                <exclude reference="flk-hu-iXU"/>
                                 <exclude reference="m0Z-P2-2YS"/>
                                 <exclude reference="Bpo-hN-T8m"/>
                                 <exclude reference="V3u-Sk-DbL"/>
                                 <exclude reference="vEC-2m-6Mp"/>
+                                <exclude reference="DQN-cv-BnZ"/>
+                                <exclude reference="biq-WJ-tL2"/>
+                                <exclude reference="qjG-f2-Khk"/>
+                                <exclude reference="rob-tt-bjN"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="3sw-gR-d6B"/>
                                 <include reference="Fo6-cI-ece"/>
+                                <include reference="muc-AC-NEX"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="1vM-zH-zhz"/>
                                 <include reference="9hR-rk-ZY3"/>
+                                <include reference="IhC-lh-vVi"/>
                                 <include reference="fcs-so-D0h"/>
+                                <include reference="flk-hu-iXU"/>
                                 <include reference="m0Z-P2-2YS"/>
                                 <include reference="Bpo-hN-T8m"/>
                                 <include reference="V3u-Sk-DbL"/>
                                 <include reference="vEC-2m-6Mp"/>
+                                <include reference="DQN-cv-BnZ"/>
+                                <include reference="biq-WJ-tL2"/>
+                                <include reference="qjG-f2-Khk"/>
+                                <include reference="rob-tt-bjN"/>
                             </mask>
                         </variation>
                     </view>
