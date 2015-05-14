@@ -39,6 +39,16 @@
                                     <rect key="frame" x="21" y="551" width="299" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic9-rb-gal">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="337" y="551" width="46" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1450980392" green="0.28235294119999998" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -51,7 +61,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="muc-AC-NEX" secondAttribute="trailing" constant="64" id="biq-WJ-tL2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="flk-hu-iXU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="kcY-AO-jKe"/>
+                            <constraint firstItem="Ic9-rb-gal" firstAttribute="leading" secondItem="muc-AC-NEX" secondAttribute="trailing" constant="17" id="mK1-mf-I6g"/>
                             <constraint firstItem="Fo6-cI-ece" firstAttribute="top" secondItem="3sw-gR-d6B" secondAttribute="bottom" constant="23" id="mdY-Ir-PKf"/>
+                            <constraint firstItem="Ic9-rb-gal" firstAttribute="top" secondItem="Fo6-cI-ece" secondAttribute="bottom" constant="32" id="oFM-kf-BvO"/>
                             <constraint firstItem="muc-AC-NEX" firstAttribute="top" secondItem="Fo6-cI-ece" secondAttribute="bottom" constant="42" id="qjG-f2-Khk"/>
                             <constraint firstItem="muc-AC-NEX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="rob-tt-bjN"/>
                             <constraint firstItem="3sw-gR-d6B" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="vEC-2m-6Mp"/>
@@ -61,6 +73,7 @@
                                 <exclude reference="3sw-gR-d6B"/>
                                 <exclude reference="Fo6-cI-ece"/>
                                 <exclude reference="muc-AC-NEX"/>
+                                <exclude reference="Ic9-rb-gal"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2gx-4N-Ngq"/>
@@ -76,6 +89,8 @@
                                 <exclude reference="biq-WJ-tL2"/>
                                 <exclude reference="qjG-f2-Khk"/>
                                 <exclude reference="rob-tt-bjN"/>
+                                <exclude reference="mK1-mf-I6g"/>
+                                <exclude reference="oFM-kf-BvO"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -83,6 +98,7 @@
                                 <include reference="3sw-gR-d6B"/>
                                 <include reference="Fo6-cI-ece"/>
                                 <include reference="muc-AC-NEX"/>
+                                <include reference="Ic9-rb-gal"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2gx-4N-Ngq"/>
@@ -98,6 +114,8 @@
                                 <include reference="biq-WJ-tL2"/>
                                 <include reference="qjG-f2-Khk"/>
                                 <include reference="rob-tt-bjN"/>
+                                <include reference="mK1-mf-I6g"/>
+                                <include reference="oFM-kf-BvO"/>
                             </mask>
                         </variation>
                     </view>
