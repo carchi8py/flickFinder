@@ -23,35 +23,35 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fo6-cI-ece">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="init2" translatesAutoresizingMaskIntoConstraints="NO" id="Fo6-cI-ece">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="21" y="72" width="362" height="289"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="21" y="72" width="362" height="447"/>
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="muc-AC-NEX">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="21" y="403" width="299" height="30"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="21" y="551" width="299" height="30"/>
                                 </variation>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.1450980392" green="0.28235294119999998" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Fo6-cI-ece" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="1vM-zH-zhz"/>
+                            <constraint firstItem="Fo6-cI-ece" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="2gx-4N-Ngq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="9hR-rk-ZY3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3sw-gR-d6B" secondAttribute="trailing" constant="123" id="Bpo-hN-T8m"/>
                             <constraint firstItem="muc-AC-NEX" firstAttribute="top" secondItem="Fo6-cI-ece" secondAttribute="bottom" constant="42" id="DQN-cv-BnZ"/>
-                            <constraint firstItem="Fo6-cI-ece" firstAttribute="top" secondItem="3sw-gR-d6B" secondAttribute="bottom" constant="23" id="IhC-lh-vVi"/>
+                            <constraint firstItem="muc-AC-NEX" firstAttribute="top" secondItem="Fo6-cI-ece" secondAttribute="bottom" constant="32" id="SDI-78-ZDV"/>
                             <constraint firstItem="3sw-gR-d6B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="124" id="V3u-Sk-DbL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="muc-AC-NEX" secondAttribute="trailing" constant="64" id="biq-WJ-tL2"/>
-                            <constraint firstItem="Fo6-cI-ece" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="fcs-so-D0h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="flk-hu-iXU"/>
-                            <constraint firstItem="Fo6-cI-ece" firstAttribute="top" secondItem="3sw-gR-d6B" secondAttribute="bottom" constant="23" id="m0Z-P2-2YS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="kcY-AO-jKe"/>
+                            <constraint firstItem="Fo6-cI-ece" firstAttribute="top" secondItem="3sw-gR-d6B" secondAttribute="bottom" constant="23" id="mdY-Ir-PKf"/>
                             <constraint firstItem="muc-AC-NEX" firstAttribute="top" secondItem="Fo6-cI-ece" secondAttribute="bottom" constant="42" id="qjG-f2-Khk"/>
                             <constraint firstItem="muc-AC-NEX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="rob-tt-bjN"/>
                             <constraint firstItem="3sw-gR-d6B" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="vEC-2m-6Mp"/>
@@ -63,16 +63,16 @@
                                 <exclude reference="muc-AC-NEX"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1vM-zH-zhz"/>
+                                <exclude reference="2gx-4N-Ngq"/>
                                 <exclude reference="9hR-rk-ZY3"/>
-                                <exclude reference="IhC-lh-vVi"/>
-                                <exclude reference="fcs-so-D0h"/>
                                 <exclude reference="flk-hu-iXU"/>
-                                <exclude reference="m0Z-P2-2YS"/>
+                                <exclude reference="kcY-AO-jKe"/>
+                                <exclude reference="mdY-Ir-PKf"/>
                                 <exclude reference="Bpo-hN-T8m"/>
                                 <exclude reference="V3u-Sk-DbL"/>
                                 <exclude reference="vEC-2m-6Mp"/>
                                 <exclude reference="DQN-cv-BnZ"/>
+                                <exclude reference="SDI-78-ZDV"/>
                                 <exclude reference="biq-WJ-tL2"/>
                                 <exclude reference="qjG-f2-Khk"/>
                                 <exclude reference="rob-tt-bjN"/>
@@ -85,16 +85,16 @@
                                 <include reference="muc-AC-NEX"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="1vM-zH-zhz"/>
+                                <include reference="2gx-4N-Ngq"/>
                                 <include reference="9hR-rk-ZY3"/>
-                                <include reference="IhC-lh-vVi"/>
-                                <include reference="fcs-so-D0h"/>
                                 <include reference="flk-hu-iXU"/>
-                                <include reference="m0Z-P2-2YS"/>
+                                <include reference="kcY-AO-jKe"/>
+                                <include reference="mdY-Ir-PKf"/>
                                 <include reference="Bpo-hN-T8m"/>
                                 <include reference="V3u-Sk-DbL"/>
                                 <include reference="vEC-2m-6Mp"/>
                                 <include reference="DQN-cv-BnZ"/>
+                                <include reference="SDI-78-ZDV"/>
                                 <include reference="biq-WJ-tL2"/>
                                 <include reference="qjG-f2-Khk"/>
                                 <include reference="rob-tt-bjN"/>
@@ -107,4 +107,7 @@
             <point key="canvasLocation" x="576" y="694.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="init2" width="340" height="239"/>
+    </resources>
 </document>
