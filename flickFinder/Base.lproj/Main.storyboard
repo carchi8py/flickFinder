@@ -23,18 +23,33 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fo6-cI-ece">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="21" y="72" width="362" height="289"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1450980392" green="0.28235294119999998" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fo6-cI-ece" secondAttribute="trailing" constant="1" id="9hR-rk-ZY3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3sw-gR-d6B" secondAttribute="trailing" constant="123" id="Bpo-hN-T8m"/>
                             <constraint firstItem="3sw-gR-d6B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="124" id="V3u-Sk-DbL"/>
+                            <constraint firstItem="Fo6-cI-ece" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="fcs-so-D0h"/>
+                            <constraint firstItem="Fo6-cI-ece" firstAttribute="top" secondItem="3sw-gR-d6B" secondAttribute="bottom" constant="23" id="m0Z-P2-2YS"/>
                             <constraint firstItem="3sw-gR-d6B" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="vEC-2m-6Mp"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3sw-gR-d6B"/>
+                                <exclude reference="Fo6-cI-ece"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="9hR-rk-ZY3"/>
+                                <exclude reference="fcs-so-D0h"/>
+                                <exclude reference="m0Z-P2-2YS"/>
                                 <exclude reference="Bpo-hN-T8m"/>
                                 <exclude reference="V3u-Sk-DbL"/>
                                 <exclude reference="vEC-2m-6Mp"/>
@@ -43,8 +58,12 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="3sw-gR-d6B"/>
+                                <include reference="Fo6-cI-ece"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="9hR-rk-ZY3"/>
+                                <include reference="fcs-so-D0h"/>
+                                <include reference="m0Z-P2-2YS"/>
                                 <include reference="Bpo-hN-T8m"/>
                                 <include reference="V3u-Sk-DbL"/>
                                 <include reference="vEC-2m-6Mp"/>
@@ -54,6 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="576" y="694.5"/>
         </scene>
     </scenes>
 </document>
