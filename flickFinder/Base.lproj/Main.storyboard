@@ -99,7 +99,7 @@
                                 <color key="textColor" red="1" green="0.57866467927631571" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="0.75192742598684215" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="21" y="717" width="362" height="75"/>
+                                    <rect key="frame" x="21" y="716" width="362" height="75"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -235,6 +235,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="latitudeTextField" destination="rv3-Cf-6wg" id="aSY-SL-dgw"/>
+                        <outlet property="longitudeTextField" destination="7qz-5K-b7g" id="sca-3J-hOZ"/>
+                        <outlet property="pharseTextField" destination="muc-AC-NEX" id="omy-aK-82M"/>
+                        <outlet property="photoImageView" destination="Fo6-cI-ece" id="nd3-ob-UXZ"/>
+                        <outlet property="photoTitleLabel" destination="8nd-ZD-qAE" id="t2x-lg-Zuh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
