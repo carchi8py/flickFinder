@@ -75,7 +75,19 @@ class ViewController: UIViewController {
                     if let photoArray = photosDiectionary.valueForKey("photo") as? [[String: AnyObject]] {
                         let randomPhotoIndex = Int(arc4random_uniform(UInt32(photoArray.count)))
                         let photoDictionary = photoArray[randomPhotoIndex] as [String: AnyObject]
-                        self.photoTitleLabel.text = photoDictionary["url_m"] as? String
+                        
+                        /* Prepare the Ui updates */
+                        let photoTitle = photoDictionary["title"] as? String
+                        let imageUrlString = photoDictionary["url_m"] as? String
+                        let imageUrl = NSURL(string: imageUrlString!)
+                        
+                        if let imageData = NSData(contentsOfURL: imageUrl!) {
+                            dispatch_async(dispatch_get_main_queue(), {
+                                self.photoTitleLabel.text = photoTitle
+                                self.photoImageView.image = UIImage(data: imageData)
+                            })
+                        }
+                        
                     } else {
                         self.photoTitleLabel.text = ("Can't find key photo in \(photosDiectionary)")
                     }
