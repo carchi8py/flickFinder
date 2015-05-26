@@ -39,12 +39,30 @@ class ViewController: UIViewController {
         getImageFromFlickrBySearch(methodArguments)
     }
     
+    //TODO: this function needs to be complete
     @IBAction func searchPhotosByLatLong(sender: AnyObject) {
+        println("Will implement this function in a later step...")
     }
     
+    //TODO: implement the tapRecognizer
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        println("Initialize the tapRecognizer in viewDidLoad")
+    }
+    
+    //TODO: Add TapRecongizer
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        println("Add the tapRecognizer and subscribe to keyboard notifications in viewWillAppear")
+    }
+    
+    //TODO: Remove TapRecongizer
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        println("Remove the tapRecognizer and unsubscribe from keyboard notifications in viewWillDisappear")
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,6 +70,49 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    /* ============================================================
+    * Functional stubs for handling UI problems
+    * ============================================================ */
+    
+    /* 1 - Dismissing the keyboard */
+    func addKeyboardDismissRecognizer() {
+        println("Add the recognizer to dismiss the keyboard")
+    }
+    
+    func removeKeyboardDismissRecognizer() {
+        println("Remove the recognizer to dismiss the keyboard")
+    }
+    
+    func handleSingleTap(recognizer: UITapGestureRecognizer) {
+        println("End editing here")
+    }
+    
+    /* 2 - Shifting the keyboard so it does not hide controls */
+    func subscribeToKeyboardNotifications() {
+        println("Subscribe to the KeyboardWillShow and KeyboardWillHide notifications")
+    }
+    
+    func unsubscribeToKeyboardNotifications() {
+        println("Unsubscribe to the KeyboardWillShow and KeyboardWillHide notifications")
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        println("Shift the view's frame up so that controls are shown")
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        println("Shift the view's frame down so that the view is back to its original placement")
+    }
+    
+    func getKeyboardHeight(notification: NSNotification) -> CGFloat {
+        println("Get and return the keyboard's height from the notification")
+        return 0.0
+    }
+
+/* ============================================================ *
+
+
     // Call the flicker API and returns a random image based on what we are searching for
     func getImageFromFlickrBySearch(methodArguments: [String : AnyObject]) {
         
