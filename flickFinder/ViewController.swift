@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var longitudeTextField: UITextField!
     @IBOutlet weak var photoTitleLabel: UILabel!
     
+    // The variables we need to pass to flicers API
     @IBAction func searchPhotosByPhrase(sender: AnyObject) {
-        /* 1 Hardcore the arguments */
         let methodArguments = [
             "method": METHOD_NAME,
             "api_key": API_KEY,
@@ -36,7 +36,6 @@ class ViewController: UIViewController {
             "nojsoncallback": NO_JSON_CALLBACK
         ]
         
-        /* 2 - Call the Flickr API with these arguments */
         getImageFromFlickrBySearch(methodArguments)
     }
     
@@ -53,17 +52,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Call the flicker API and returns a random image based on what we are searching for
     func getImageFromFlickrBySearch(methodArguments: [String : AnyObject]) {
         
-        /* 3 - Get the shared NSURLSession to faciliate network activity */
         let session = NSURLSession.sharedSession()
         
-        /* 4 - Create the NSURLRequest using properly escaped URL */
         let urlString = BASE_URL + escapedParameters(methodArguments)
         let url = NSURL(string: urlString)!
         let request = NSURLRequest(URL: url)
         
-        /* 5 - Create NSURLSessionDataTask and completion handler */
         let task = session.dataTaskWithRequest(request) {data, response, downloadError in
             if let error = downloadError {
                 println("Could not complete the request \(error)")
@@ -100,7 +97,6 @@ class ViewController: UIViewController {
             }
         }
         
-        /* 6 - Resume (execute) the task */
         task.resume()
     }
     
